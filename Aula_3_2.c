@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main () {
+int main () {
 	float n1, n2, med;
 	printf("Digite seu primeiro numero: ");
 	scanf("%f",&n1);
@@ -12,6 +12,7 @@ if (med>=5) {
 		printf("\nAprovado!");
 }
 else {
-	printf("\nReprovado seu vagabundo!");
-}
+		printf("\nReprovado seu vagabundo!");
+	}	
+	return 0;
 }

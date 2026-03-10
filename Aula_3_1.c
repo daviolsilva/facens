@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
 	float num1, num2;
 	printf("Digite o primeiro numero: ");
 	scanf("%f",&num1);
@@ -15,4 +15,5 @@ main() {
 	else {
 		printf("Sao a mesma coisa :D");
 	}
+	return 0;
 }

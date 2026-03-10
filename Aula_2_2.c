@@ -8,4 +8,5 @@ int main() {
 	scanf("%f",&num2);
 	media = (num1 + num2) / 2;
 	printf("\n Aqui esta a sua media: %.2f", media);
+	return 0;
 }

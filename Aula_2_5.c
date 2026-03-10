@@ -1,14 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
-int num1, num2, div, quo;
+float num1, num2, div, quo;
 
-main() {
+int main() {
 	printf("Digite o seu dividendo: ");
-	scanf("%i",&num1);
+	scanf("%f",&num1);
 	printf("\nDigite o seu divisor: ");
-	scanf("%i",&num2);
+	scanf("%f",&num2);
 	div = num1 / num2;
-	quo = num1 % num2;
-	printf("\nSeu resultado e: %i", div);
-	printf("\nSeu quociente e: %i", quo);
+	quo = fmod(num1, num2);
+	printf("\nSeu resultado e: %.3f", div);
+	printf("\nSeu quociente e: %.3f", quo);
+	return 0;
 }
