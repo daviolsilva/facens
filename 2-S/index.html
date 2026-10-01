@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cris Deguste - Confeitaria artesanal com bolos, cupcakes, brigadeiros e doces personalizados feitos com amor e ingredientes selecionados.">
+    <title>Cris Deguste | Confeitaria Artesanal</title>
+    
+    <!-- Link para a folha de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Pré-conexão com fontes do Google para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal da Confeitaria -->
+    <header class="header" id="topo">
+        <div class="container header-container">
+            <!-- Logotipo e Nome da Marca -->
+            <a href="#topo" class="logo-link">
+                <img src="Imagens/logo.png" alt="Logotipo da Cris Deguste" class="logo-img">
+                <span class="logo-text">Cris Deguste</span>
+            </a>
+
+            <!-- Menu de Navegação Principal -->
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
+                <button class="menu-close-btn" id="menu-close-btn" aria-label="Fechar menu">&times;</button>
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#produtos" class="nav-link">Cardápio</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ações do Cabeçalho: Botão de Contato/Encomenda e Menu Hambúrguer -->
+            <div class="header-actions">
+                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20fazer%20uma%20encomenda!" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-btn">Encomendar</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <!-- Banner Principal (Hero Section) -->
+        <section class="hero" id="inicio">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Confeitaria Artesanal</span>
+                    <h1 class="hero-title">Doçura e Afeto em Cada Mordida</h1>
+                    <p class="hero-description">Transformamos os melhores ingredientes em momentos inesquecíveis. Bolos, tortas, cupcakes e doces finos preparados com técnica artesanal e muito carinho para adoçar o seu dia.</p>
+                    <div class="hero-buttons">
+                        <a href="#produtos" class="btn btn-primary">Explorar Cardápio</a>
+                        <a href="#contato" class="btn btn-secondary">Fazer Encomenda</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="Imagens/banner.jpg" alt="Deliciosos doces e bolos artesanais da Cris Deguste" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre a Confeitaria -->
+        <section class="about section" id="sobre">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="Imagens/cupcake.jpg" alt="Preparação artesanal de cupcakes na Cris Deguste" class="about-img">
+                </div>
+                <div class="about-text">
+                    <span class="section-subtitle">Nossa Essência</span>
+                    <h2 class="section-title">Feito à Mão, Com Amor e Tradição</h2>
+                    <p>A <strong>Cris Deguste</strong> nasceu da paixão pela confeitaria artesanal e pelo desejo de proporcionar experiências únicas através de sabores marcantes. Cada receita é desenvolvida com rigor na escolha dos ingredientes, priorizando itens frescos, selecionados e de altíssima qualidade.</p>
+                    <p>Nosso compromisso é entregar não apenas doces, mas memórias afetivas em formato de sobremesa. Seja para um aniversário, uma celebração em família ou para acompanhar o seu café da tarde, estamos prontos para surpreender o seu paladar.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✨</span>
+                            <span>Ingredientes 100% Selecionados</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌿</span>
+                            <span>Produção Artesanal Diária</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vitrine de Produtos (Cardápio) -->
+        <section class="products section" id="produtos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nossas Delícias</span>
+                    <h2 class="section-title">Explore o Nosso Cardápio</h2>
+                    <p class="section-desc">Conheça os queridinhos da nossa confeitaria, preparados diariamente para você.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Produto 1: Bolo de Pote -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/bolo-pote.jpg" alt="Bolo de Pote Cremoso" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Bolo de Pote</h3>
+                            <p class="product-desc">Camadas generosas de massa fofinha e recheios cremosos de Ninho com Nutella ou Doce de Leite.</p>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 12,90</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20encomendar%20o%20Bolo%20de%20Pote!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Encomendar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 2: Brigadeiro -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/brigadeiro.jpg" alt="Brigadeiro Gourmet Artesanal" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Brigadeiro Gourmet</h3>
+                            <p class="product-desc">Feito com chocolate belga selecionado e confeitos de alto padrão. Textura aveludada e sabor inconfundível.</p>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 4,50 un.</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20encomendar%20o%20Brigadeiro%20Gourmet!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Encomendar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 3: Felicidade -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/felicidade.jpg" alt="Doce Felicidade" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Felicidade</h3>
+                            <p class="product-desc">Nossa sobremesa especial em camadas, combinando texturas crocantes e cremosas que derretem na boca.</p>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 15,00</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20encomendar%20o%20doce%20Felicidade!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Encomendar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 4: Torta de Limão -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/torta-limao.jpg" alt="Torta de Limão com Merengue" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Torta de Limão</h3>
+                            <p class="product-desc">Base amanteigada crocante, recheio cremoso e equilibrado de limão siciliano coberto com merengue maçaricado.</p>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 45,00</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20encomendar%20a%20Torta%20de%20Limão!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Encomendar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 5: Cupcakes -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/cupcake.jpg" alt="Cupcake Decorado" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Cupcakes Decorados</h3>
+                            <p class="product-desc">Bolinhos fofinhos com generosa cobertura de buttercream artesanal e decorações temáticas encantadoras.</p>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 9,90</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20encomendar%20os%20Cupcakes!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Encomendar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 6: Brownies -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/brownie.jpg" alt="Brownie Molhadinho" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Brownie Artesanal</h3>
+                            <p class="product-desc">Casquinha crocante por fora, interior super molhadinho e sabor intenso de puro cacau.</p>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 10,00</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20encomendar%20o%20Brownie!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Encomendar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 7: Doces Personalizados -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/doce-personalizado.jpg" alt="Doces Personalizados para Festas" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Doces Personalizados</h3>
+                            <p class="product-desc">Modelados artisticamente em leite ninho ou pasta americana para aniversários, casamentos e eventos corporativos.</p>
+                            <div class="product-footer">
+                                <span class="product-price">Sob Consulta</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20orçamento%20para%20Doces%20Personalizados!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Consultar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 8: Caixas de Doces para Presente -->
+                    <article class="product-card">
+                        <figure class="product-figure">
+                            <img src="Imagens/caixa-presente.jpg" alt="Caixa de Presente com Doces Finos" class="product-img" loading="lazy">
+                        </figure>
+                        <div class="product-body">
+                            <h3 class="product-title">Caixas de Presente</h3>
+                            <p class="product-desc">Embalagens sofisticadas repletas de bombons e doces finos variados. O presente perfeito para datas especiais.</p>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 55,00</span>
+                                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20encomendar%20a%20Caixa%20de%20Presente!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Encomendar</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Diferenciais -->
+        <section class="features section" id="diferenciais">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Por que nos escolher?</span>
+                    <h2 class="section-title">O Padrão Cris Deguste</h2>
+                    <p class="section-desc">Nosso compromisso é superar expectativas em cada detalhe.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-box-icon">🍯</div>
+                        <h3>Receitas Exclusivas</h3>
+                        <p>Combinações desenvolvidas minuciosamente para entregar harmonia de sabores e texturas únicas.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">🕒</div>
+                        <h3>Sempre Fresquinho</h3>
+                        <p>Produção em pequenos lotes diários para garantir que cada doce chegue com máxima frescura à sua mesa.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">🎁</div>
+                        <h3>Apresentação Impecável</h3>
+                        <p>Embalagens cuidadosas e elegantes, ideais para presentear quem você ama ou embelezar sua festa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Fotos -->
+        <section class="gallery section" id="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nossos Momentos</span>
+                    <h2 class="section-title">Galeria de Inspirações</h2>
+                    <p class="section-desc">Um pouco do nosso universo doce e das criações que saem da nossa cozinha.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="Imagens/bolo-pote.jpg" alt="Galeria 1" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Imagens/brigadeiro.jpg" alt="Galeria 2" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Imagens/torta-limao.jpg" alt="Galeria 3" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Imagens/cupcake.jpg" alt="Galeria 4" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos Demonstrativos -->
+        <section class="testimonials section" id="depoimentos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Depoimentos</span>
+                    <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+                    <p class="section-desc">Conteúdo demonstrativo ilustrando a satisfação de quem já provou nossas delícias.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Os doces da Cris Deguste simplesmente salvaram o aniversário da minha filha! Todos os convidados elogiaram os brigadeiros e a torta de limão. Qualidade impecável!"</p>
+                        <h4 class="testimonial-author">— Mariana Souza</h4>
+                        <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"O bolo de pote é viciante! Massa super molhadinha e recheio na medida certa. Peço toda semana para o meu café da tarde no escritório."</p>
+                        <h4 class="testimonial-author">— Carlos Eduardo</h4>
+                        <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"As caixas de presente são de uma delicadeza sem tamanho. Presenteei minha esposa e ela ficou encantada com a apresentação e o sabor."</p>
+                        <h4 class="testimonial-author">— Juliana Mendes</h4>
+                        <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Perguntas Frequentes (FAQ) -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Dúvidas Comuns</span>
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-desc">Tire suas dúvidas sobre encomendas, prazos e entregas.</p>
+                </div>
+
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-question">Como faço para realizar uma encomenda?</summary>
+                        <p class="faq-answer">Você pode clicar em qualquer botão de encomenda do site para ser direcionado diretamente para o nosso atendimento via WhatsApp, ou preencher o formulário de contato abaixo.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Qual é a antecedência necessária para encomendas de festas?</summary>
+                        <p class="faq-answer">Para doces tradicionais e caixas de presente, recomendamos pelo menos 24 horas de antecedência. Para bolos decorados e festas completas, sugerimos de 3 a 5 dias úteis.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Vocês realizam entregas a domicílio?</summary>
+                        <p class="faq-answer">Sim! Realizamos entregas em toda a região. Consulte a taxa de entrega para o seu bairro informando seu endereço no momento do pedido.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Os produtos contêm ingredientes sem glúten ou lactose?</summary>
+                        <p class="faq-answer">Possuímos algumas opções especiais sob consulta prévia, mas nossa produção padrão utiliza ingredientes tradicionais (trigo e derivados de leite).</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato e Encomenda -->
+        <section class="contact section" id="contato">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <span class="section-subtitle">Fale Conosco</span>
+                    <h2 class="section-title">Faça Sua Encomenda ou Tire Dúvidas</h2>
+                    <p>Estamos prontos para atender você e deixar seus momentos ainda mais doces. Entre em contato pelos nossos canais ou envie uma mensagem através do formulário ao lado.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>Rua dos Doces Artesanais, 123 - Centro</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Telefone / WhatsApp</strong>
+                                <p>(00) 00000-0000</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">⏰</span>
+                            <div>
+                                <strong>Horário de Atendimento</strong>
+                                <p>Segunda a Sábado: das 10h às 19h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário Demonstrativo -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Envie sua Mensagem</h3>
+                        <p class="form-notice">Nota: Este formulário é demonstrativo. Para atendimento imediato, utilize nosso WhatsApp.</p>
+                        
+                        <div class="form-group">
+                            <label for="name">Seu Nome</label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Seu E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Sua Mensagem / Pedido</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Descreva os produtos desejados ou sua dúvida..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Completo -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#topo" class="logo-link footer-logo">
+                    <img src="Imagens/logo.png" alt="Logotipo Cris Deguste" class="logo-img">
+                    <span class="logo-text">Cris Deguste</span>
+                </a>
+                <p class="footer-desc">Confeitaria artesanal dedicada a produzir momentos doces, inesquecíveis e repletos de afeto para você e sua família.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#produtos">Cardápio</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram da Cris Deguste" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="#" aria-label="Facebook da Cris Deguste" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="#" aria-label="WhatsApp da Cris Deguste" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Cris Deguste. Todos os direitos reservados. Desenvolvido para fins acadêmicos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript para interatividade -->
+    <script src="script.js"></script>
+</body>
+</html> html
+    ├── bolo-pote.jpg
+    ├── brigadeiro.jpg
+    ├── felicidade.jpg
+    ├── torta-limao.jpg
+    ├── cupcake.jpg
+    ├── brownie.jpg
+    ├── doce-personalizado.jpg
+    └── caixa-presente.jpg
